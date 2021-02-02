@@ -1,0 +1,84 @@
+main {
+  font-family: "Optima";
+  min-height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 95% 5%;
+  padding: 25px;
+  background-color: #F0F0F0;
+}
+
+.header-text {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.header svg {
+  width: 40px;
+  height: auto;
+}
+
+.navbar {
+  background-color: #A0A0A0
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav li {
+  display: grid;
+  grid-template-columns: 10% 10% auto;
+  padding: 15px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+} 
+
+.section {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-areas: 
+    ". title ."
+    ". p-one ."
+    ". p-two .";
+  padding-top: 20px;
+}
+
+section h1 {
+  grid-area: title;
+  font-size: 16px;
+}
+
+.section .p-one {
+  grid-area: p-one;
+  padding-top: 20px;
+}
+
+.section .p-two {
+  grid-area: p-two;
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: #A0A0A0;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  list-style-type: none;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: black;
+}
